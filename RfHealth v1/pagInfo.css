@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top right, rgba(16, 57, 190, 0.973), rgba(12, 10, 104, 0.973), rgba(10, 8, 105, 0.973));
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#dropdown{
+    height: 90px;
+    width: fit-content;
+    display: inline-block;
+    border: 5px outset rgba(0, 0, 0, 0.74); 
+    border-radius: 10px;
+    position: relative;
+    padding: 4px;
+    background-image: linear-gradient(to top right, rgba(14, 55, 109, 0.973),rgba(8, 37, 80, 0.973));
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(20, 58, 161, 0.973), rgba(24, 11, 139, 0.973));
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.76);
+    padding: 12px 16px;
+     z-index: 1;
+     border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.buttons{
+    /* Borda */
+    border-radius: 10px;
+    border: 2px outset rgb(19, 9, 163);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    height: fit-content;
+    width: fit-content;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.151);
+    }
+
+    .buttons:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.1s;
+    }
+    
+    .buttons:active {
+      background-color: #3e8e4100;
+      box-shadow: 0 5px rgb(43, 42, 42);
+      transform: translateY(2px);
+    }
+
+    .labels{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        color: rgba(240, 248, 255, 0.904);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.226);
+    }
+
+    .headers{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        color: rgba(240, 248, 255, 0.904);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.226);     
+    }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar Informações</title>
+        <link rel="stylesheet" href="pagEditar.css">
+    </head>
+    <body  onload="inicia_cadastro()">
+        
+        <div id="cadastro">
+
+            <h1 class="labels">Cadastro</h1><br>
+
+
+            <input class="inputs" type="text" placeholder="CPF" id="cpf_edit"> 
+            
+            <input class="inputs" type="password" placeholder="senha" id="senha_input_edit" >
+            <br><br>
+            
+            <button class="buttons" onclick="edit_cadastro()">editar informações de cadastro</button>
+            
+            
+        </div>
+        <div id="infoPessoal">
+            <br>
+            <h1 class="labels" > Informações Pessoais</h1> <br><br>
+
+
+            <input class="inputs" type="text"  placeholder="Nome Completo" id="nome_completo_input_edit">           
+
+            <input class="inputs" type="text" placeholder="RG" id="rg_edit"> 
+
+            <input class="inputs" type="text" placeholder="altura" id="altura_edit"> 
+            <br><br>
+
+            <input class="inputs" type="text" placeholder="peso" id="peso_edit"> 
+            
+            
+            <input class="inputs" type="text" placeholder="telefone" id="telefone_edit"> 
+            
+            
+            <input class="inputs" type="text" placeholder="Contato de Emergência" id="telefone_outro_edit"> 
+            <br><br>
+            
+            <h1 class="labels" for="">Nascimento</h1><br>
+
+            
+            <input class="inputs" type="date" id="nascimento_input_edit"><br><br>
+            
+
+            <button class="buttons" onclick="edit_info_pessoal_user()">editar informações pessoais</button>
+            
+        </div>
+        <div id="endereco">
+            <br>
+            <h1 class="labels" >Endereço</h1> <br><br>
+
+
+            <input class="inputs" type="text" placeholder="CEP" id="cep_edit"> 
+            
+            <input class="inputs" type="text" placeholder="n° Residência" id="n_casa_edit"> 
+            
+            <input class="inputs" type="text" placeholder="complemento" id="complemento_edit"> 
+            <br><br>
+
+            <input class="inputs" type="text" placeholder="país" id="pais_edit"> 
+
+            <input class="inputs" type="text" placeholder="estado" id="estado_edit"> 
+            
+            <input class="inputs" type="text" placeholder="cidade" id="cidade_edit"> <br><br>            
+            
+            <button class="buttons" onclick="edit_endereco()">editar informações de endereco</button>
+
+            
+        </div>
+        <div id="infoSaude">
+            <br>
+            <h1 class="labels" >Informações Médicas</h1> <br><br>
+
+            
+            <input class="inputs" type="text" placeholder="pode receber sangue" id="pode_reber_sangue_edit"> 
+            
+            <input class="inputs" type="text" placeholder="tipo sanguineo" id="tipo_sanguineo_edit"> 
+            <br><br>
+            
+            <input class="inputs" type="text" placeholder="doador de orgãos" id="doador_orgaos_edit">            
+            
+            <input class="inputs" type="text" placeholder="fumante?" id="fuma_edit"> 
+            <br><br>
+
+
+            <input class="inputs" type="text" placeholder="alergias" id="alergias_edit"> 
+            <button class="buttons" onclick="add_alergias()">adicionar</button>
+            <button class="buttons" onclick="delete_alergias()">excluir</button>
+            
+            
+            <input class="inputs" type="text" placeholder="doenças cronicas" id="doencas_cronicas_edit">
+            <button class="buttons" onclick="add_doencas_cronicas()">adicionar</button>
+            <button class="buttons" onclick="delete_doencas_cronicas()">excluir</button> <br><br>
+            
+            <input class="inputs" type="text" placeholder="cirurgias realizadas" id="cirurgias_realizadas_edit">
+            <button class="buttons" onclick="add_cirurgias_realizadas()">adicionar</button>
+            <button class="buttons" onclick="delete_cirurgias_realizadas()">excluir</button>
+            
+            
+            <input class="inputs" type="text" placeholder="deficiencias" id="deficiencias_edit">
+            <button class="buttons" onclick="add_deficiencias()">adicionar</button>
+            <button class="buttons" onclick="delete_deficiencias()">excluir</button><br><br>           
+            
+            <button class="buttons" onclick="edit_info_hospitalar_user()">editar informações médicas</button>
+
+        </div>
+        <div id="planoSaude">
+            <br>
+            <h1 class="labels">Plano de Saúde</h1> <br><br>
+
+            
+            <input class="inputs"  type="text" placeholder="Nome do Plano" id="nome_plano_edit">
+            
+            <input class="inputs"  type="text" placeholder="N° Cadastro" id="n_cadastro_edit">
+            <br><br>
+            
+            <h1 class="labels">Validade</h1><br>
+
+            <input class="inputs" type="date" placeholder="Data de Validade" id="validade_edit"> 
+            <br><br>
+            
+            <button class="buttons" onclick="edit_info_hospitalar_user()">editar informações do plano de saúde</button> <br><br>
+         
+            <h1 class="labels">Aproxime a sua tag para cadastrar uma nova</h1><br>
+
+            <button class="buttons" onclick="finalizar()">Finalizar</button>
+
+            <button class="buttons" onclick="excluir_tag()">Excluir Tag</button>
+
+            <button class="buttons" onclick="excluir_conta()">Excluir conta</button>
+            
+        </div>
+        <div>
+
+            <div id="idTag"></div>
+
+
+        </div>
+
+    <script src="pagina_editar_informacoes.js"></script>
+
+</body>
+</html>

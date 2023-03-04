@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PagLogin.css">
+    <title>Página inicial</title>
+</head>
+<body onload="inicia_cadastro()">
+    <div id="container">
+       <img class="img" src="IMG-20220627-WA0007.jpg" alt="logoRF">
+        <div id="login">
+            <label class="labels" for="">LOGIN</label><br><br>
+            
+            <label class="labels" for="">Digite seu CPF:</label> <br>
+        
+            <input class="inputs" type="text" id="cpf_input" placeholder="CPF"> <br>    
+        
+            <label class="labels" for="">Digite sua senha:</label> <br>
+    
+            <input class="inputs" type="password" id="senha_input" placeholder="Senha" > <br><br>
+   
+            <button class="buttons" onclick="login()">Login</button> <br><br>
+            
+            
+                <button class="buttons" type="submit" onclick="cadastro()">Cadastrar</button>
+            
+
+    </div>    <!-- fim div login -->
+
+            <div id="texto">
+                <p>
+                    <h1 class="header">
+                        Bem-vindo ao projeto Real Fast Health
+                    </h1>
+                </p>
+            </div>
+            <div id="idTag"></div>
+  
+
+</div>     <!-- fim div container -->
+
+
+    <script src="pagina_login.js"></script>
+
+</body>
+</html>

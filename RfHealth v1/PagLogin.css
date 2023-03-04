@@ -1,0 +1,96 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    background-image: linear-gradient(to top right, rgba(18, 87, 44, 0.973), rgba(4, 8, 50), rgb(4, 8, 50));
+}
+
+#login{
+    padding: 20px;
+    width: 90%;
+    height: 30%;
+}
+
+#texto{ 
+   width: 93%; 
+   height: fit-content;
+   margin: 3%;
+   padding: 12px 15px;
+   box-sizing: border-box;
+   border: 2px solid rgb(5, 5, 5);
+   border-radius: 7px;
+   background-color: #ffffff46;
+   resize: none;
+   text-align: center;
+}
+.inputs{
+    /* Borda */
+    border: 4px solid black;
+    border-style: hidden hidden solid solid;
+    border-radius: 5px;
+    width: 13%;
+  
+    /* Cores */
+    background-color: rgb(255, 255, 255);
+    /* Fonte */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: medium;
+    font-style: oblique;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.151);
+}
+
+.inputs:focus {
+   border: 2px solid rgba(85, 85, 85, 0);
+}
+
+.buttons{
+    /* Borda */
+    border-radius: 10px;
+    border: 2px outset rgb(19, 9, 163);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.151);
+    }
+
+.buttons:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+
+.buttons:active {
+  background-color: #3e8e4100;
+  box-shadow: 0 5px rgb(43, 42, 42);
+  transform: translateY(2px);
+}
+
+.labels{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  color: rgba(240, 248, 255, 0.904);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.603);
+}
+
+.header{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.151);
+  text-transform: capitalize;
+  color: rgb(238, 231, 231);
+}
+
+.img{
+  height: 30%;
+  width: 20%;
+  float: right;
+  border-radius: 10px;
+  padding: 5px;
+}

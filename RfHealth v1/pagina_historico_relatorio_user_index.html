@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico</title>
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body>
+    <div id="historico">
+
+        <br><br>
+        
+        <label class="labels" for="">SE DESEJA DELETAR ALGUM EXAME DIGITE:</label>
+
+        <br><br>
+
+        <label class="labels" for="">Data do exame:</label><br><br>
+        <input class="inputs" type="date" id="data_relatorio_delete"><br>
+
+        <br>
+
+        <label class="labels" for="">Nome do(a) doutor(a):</label><br><br>
+        <input class="inputs" type="text" id="doutor_relatorio_delete" placeholder="Nome do Médico(a)">
+        <br><br>
+        <button class="buttons" onclick="delete_relatorio()">Excluir relatório</button>
+        <button class="buttons" onclick="sair()">Voltar</button>
+
+        <br><br>
+
+        <div class="labels" id="listar_relatorio"></div>
+
+    </div>
+
+    <script src="pagina_historico_relatorio_user.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagCad.css">
+    <title>Cadastro</title>
+</head>
+<body onload="inicia_cadastro()">
+    <div id="container">
+
+         <div id="cadastro">
+
+                <h1 class="labels">Cadastro</h1><br>
+
+                <input class="inputs" type="text" placeholder="CPF" id="cpf">
+                
+                <input class="inputs" type="password" id="senha_input" placeholder="Senha">
+
+        </div> <!-- fim div cadastro -->
+        
+            <div id="infoPessoal">
+
+                <h1 class="labels" > Informações Pessoais</h1> <br><br>
+                
+                <input class="inputs" type="text" id="nome_completo_input" placeholder="Nome Completo">
+
+                <!-- <input class="inputs" type="text" id="sobrenome_input" placeholder="Sobrenome"> -->
+
+                <input class="inputs" type="text" placeholder="RG" id="rg"> 
+                
+                <input class="inputs" type="text" placeholder="Altura" id="altura">  <br><br>
+                
+                <input class="inputs" type="text" placeholder="Peso" id="peso"> 
+                
+                <input class="inputs" type="text" placeholder="Telefone" id="telefone">
+                
+                <input class="inputs" type="text" placeholder="Contato Emergência" id="telefone_outro"> <br><br>
+
+                <h1 class="labels" for="">Nascimento</h1><br><br>
+
+                <input class="inputs" type="date" id="nascimento_input">
+
+        </div> <!-- fim div infoPessoal -->
+
+         <div id="endereco">
+            <br>        
+                <h1 class="labels" >Endereço</h1> <br><br>
+   
+                <input class="inputs" type="text" placeholder="CEP" id="cep">
+
+                <input class="inputs" type="text" placeholder="N° Residência" id="n_casa"> 
+
+                <input class="inputs" type="text" placeholder="Complemento" id="complemento">  <br><br>
+
+                <input class="inputs" type="text" placeholder="País" id="pais">
+
+                <input class="inputs" type="text" placeholder="Estado" id="estado"> 
+      
+                <input class="inputs" type="text" placeholder="Cidade" id="cidade"> <br><br>
+      
+        </div> <!-- fim div endereço -->
+
+         <div id="infoSaude">
+
+                <h1 class="labels" >Informações Médicas</h1> <br><br>
+    
+                <input class="inputs" type="text" placeholder="Pode Receber Sangue?" id="pode_reber_sangue"> 
+
+                <input class="inputs" type="text" placeholder="Tipo Sanguineo" id="tipo_sanguineo">  <br><br>
+    
+                <input class="inputs" type="text" placeholder="Doador de Orgãos?" id="doador_orgaos"> 
+    
+                <input class="inputs" type="text" placeholder="Fumante?" id="fuma"> <br><br> 
+  
+                                   <!-- inputs com botão -->
+
+                <input class="inputs" type="text" placeholder="Alergias" id="alergias"> 
+                <button class="buttons" onclick="alergias()">+ Adicionar</button>   
+
+                <input class="inputs" type="text" placeholder="Doenças Cronicas" id="doencas_cronicas">
+                <button class="buttons" onclick="doencasCronicas()"> +Adicionar</button> <br><br>
+   
+                <input class="inputs" type="text" placeholder="Cirurgias Realizadas" id="cirurgias_realizadas">
+                <button class="buttons" onclick="cirurgiasRealizadas()">+ Adicionar</button>
+  
+                 <input class="inputs" type="text" placeholder="Deficiencias" id="deficiencias">
+                 <button class="buttons" onclick="deficiencias()">+ Adicionar</button> <br><br>
+            
+
+        </div> <!-- fim div infoSaude -->
+        <div id="planoSaude">
+               
+                <h1 class="labels">Plano de Saúde</h1> <br><br>
+
+                <input class="inputs" type="text" placeholder="Nome do Plano" id="nome_plano"> 
+
+                <input class="inputs" type="text" placeholder="N° Cadastro" id="n_cadastro"><br><br>
+
+                <h1 class="labels">Validade</h1><br><br>
+                
+                <input class="inputs" type="date" placeholder="Data de Validade" id="validade"> <br><br><br>
+
+                <h1 class="labels">Se você já possui nossa tag por favor aproxima-la</h1>
+                <h2 class="labels">Caso ainda não possua favor se dirigir a um hospital ou clinica parceira para terminar seu cadastro</h2><br>
+
+                
+
+                <button class="buttonRegister" onclick="cadastrar()">Cadastrar</button><br>
+
+            </div> <!-- fim div planoSaude -->
+            <div id="idTag"></div>
+
+
+    </div> <!-- fim div container -->
+
+
+    
+    <script src="pagina_cadastro.js"></script>
+
+</body>
+</html>

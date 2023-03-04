@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exames</title>
+    <link rel="stylesheet" href="PagRelatorio.css">
+</head>
+<body>
+
+    <div id="exames">
+        
+
+    <Label class="labels"> CADASTRE O SEU EXAME</Label><br><br>
+
+    
+    
+    <label class="labels" for="">Data do exame</label>
+    <br>
+    <input class="inputs" type="date" id="date_relatorio">
+
+    <br><br>
+
+    <label class="labels" for="">Nome do(a) doutor(a)</label>
+    <br>
+    <input class="inputs" type="text" id="doutor_relatorio" placeholder="Nome do Medico(a)"> 
+
+    <br><br>
+
+    <label  class="labels" for="">Resultado do exame</label>
+    <br>
+    <input class="inputs" type="text" id="descricao_relatorio" placeholder="Resultado do Exame">
+
+    <br><br><br>
+
+    <button class="buttons" onclick="salvar_relatorio()">Salvar</button>
+
+    <button class="buttons" onclick="sair_relatorio()">Voltar</button>
+
+    </div>
+
+    <script src="pagina_relatorio_user.js"></script>
+
+
+</body>
+</html>
